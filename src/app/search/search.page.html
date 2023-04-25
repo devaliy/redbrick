@@ -1,0 +1,70 @@
+
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <div class="top">
+
+      <ion-item lines="none">
+       <ion-button fill="outline">
+        <ion-icon name="chevron-back-outline" ></ion-icon>&nbsp; Back
+       </ion-button>
+      </ion-item>
+      <div class="result">
+          <h2>Search Results</h2>
+          <ion-label>Two Bedroom Flats</ion-label>
+
+      </div>
+
+      <ion-item lines="none">
+        <ion-searchbar placeholder="What will you like to buy"></ion-searchbar>
+
+      </ion-item>
+
+
+    </div>
+
+    <div class="properties">
+      <ion-item>
+        <ion-label slot="start"></ion-label>
+        <ion-label slot="end" style="color: #E65100;">423 results found</ion-label>
+      </ion-item>
+
+      <ion-row>
+
+        <ion-item-sliding >
+          <ion-item lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Silhouette of mountains" width="200px" height="300px" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-thumbnail>
+            <ion-label>
+              <h3 style="color:#E65100; font-size: 16px;"> 2 Bedroom Apartment</h3>
+              <p  style="color:#E65100; font-size: 16px;"> &#8358;  120,000</p>
+              <p>
+                <ion-icon name="location" style="color:#E65100;"></ion-icon>
+                Agidingbi, Ikeja
+              </p>
+              <p>
+                <ion-icon name="star" style="color:#E65100;"></ion-icon>
+                4.5
+              </p>
+            </ion-label>
+
+
+          </ion-item>
+
+          <ion-item-options side="end">
+            <ion-item-option>
+              <ion-icon slot="start" name="cart"></ion-icon>
+              Add to Cart
+            </ion-item-option>
+
+          </ion-item-options>
+        </ion-item-sliding>
+
+
+
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

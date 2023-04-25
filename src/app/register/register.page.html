@@ -1,0 +1,113 @@
+
+
+<ion-content [fullscreen]="true">
+
+  <ion-toolbar  style="--background: white;">
+    <img src="../../assets/banner.png">
+   </ion-toolbar>
+
+
+   <ion-grid>
+    <ion-row>
+      <div class="signup">
+        <h2>Sign Up</h2>
+        <p>Please enter your correct details below</p>
+      </div>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+
+        <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+
+        <ion-list>
+
+          <ion-item lines="none">
+            <ion-input
+              type="text"
+              label="Full Name"
+              placeholder="Enter your Full Name "
+              labelPlacement="floating"
+              errorText="Invalid Fullname"
+              formControlName="fullName"
+              ngModel
+
+            ></ion-input>
+          </ion-item>
+
+
+          <ion-item lines="none">
+            <ion-input
+            placeholder="Enter your Email Address"
+              type="email"
+              label="Email"
+              labelPlacement="floating"
+              errorText="Invalid email"
+              formControlName="email"
+              ngModel
+              email
+            ></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-input
+            placeholder="Enter your Phone Number"
+              type="tel"
+              label="Phone Number"
+              labelPlacement="floating"
+              errorText="Invalid Phone Number"
+              formControlName="phone"
+              ngModel
+              tel
+            ></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-input
+            placeholder="Create a Password"
+              type="password"
+              label="Create Password"
+              labelPlacement="floating"
+              errorText="Invalid Password"
+              formControlName="password"
+               [counter]="true"
+              [maxlength]="20"
+              ngModel
+              password
+            ></ion-input>
+          </ion-item>
+<!--
+          <ion-item lines="none">
+            <ion-input
+            placeholder="Confirm Password"
+              type="password"
+              label="Confirm Password"
+              labelPlacement="floating"
+              errorText="Invalid Password"
+              formControlName="confirmPass"
+               [counter]="true"
+              [maxlength]="20"
+              ngModel
+              password
+            ></ion-input>
+          </ion-item> -->
+
+          <ion-item lines="none">
+            <ion-checkbox  justify="start"  labelPlacement="end">I agree to the <span style="color: red">terms and conditions</span> provided </ion-checkbox>
+          </ion-item>
+          <ion-item lines="none">
+          <ion-button type="submit">Sign Up</ion-button>
+          </ion-item>
+
+        </ion-list>
+        </form>
+      </ion-col>
+    </ion-row>
+   </ion-grid>
+
+
+
+
+
+</ion-content>

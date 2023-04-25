@@ -1,0 +1,69 @@
+
+
+<ion-content [fullscreen]="true">
+
+  <ion-toolbar  style="--background: white;">
+    <img src="../../assets/banner.png">
+   </ion-toolbar>
+
+
+   <ion-grid>
+    <ion-row>
+      <div class="signup">
+        <h2>Sign Up</h2>
+        <p>Please enter your correct details below</p>
+      </div>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-list>
+
+
+
+          <ion-item lines="none">
+            <ion-input
+            placeholder="Enter your Email Address"
+              type="email"
+              label="Email"
+              labelPlacement="floating"
+              errorText="Invalid email"
+              ngModel
+              email
+            ></ion-input>
+          </ion-item>
+
+
+          <ion-item lines="none">
+            <ion-input
+            placeholder="Enter Password"
+              type="password"
+              label="Password"
+              labelPlacement="floating"
+              errorText="Invalid Password"
+              [maxlength]="20"
+              ngModel
+              password
+            ></ion-input>
+          </ion-item>
+
+
+
+          <ion-item lines="none">
+            <span style="color: red">Forgot Password</span>
+          </ion-item>
+          <ion-item lines="none">
+          <ion-button type="submit">Sign In</ion-button>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+   </ion-grid>
+
+
+
+
+
+</ion-content>
