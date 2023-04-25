@@ -1,0 +1,7 @@
+{
+  "name": "redbrick",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
